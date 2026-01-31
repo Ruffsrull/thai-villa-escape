@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 import poolSunset from "@/assets/pool-sunset.jpg";
 
 const quickFacts = [
-  { icon: Users, label: "8 gäster", value: "max" },
-  { icon: Bed, label: "4 sovrum", value: "" },
-  { icon: Waves, label: "Privat pool", value: "" },
-  { icon: Wifi, label: "Snabbt WiFi", value: "" },
+  { icon: Users, label: "8 guests", value: "max" },
+  { icon: Bed, label: "4 bedrooms", value: "" },
+  { icon: Waves, label: "Private pool", value: "" },
+  { icon: Wifi, label: "Fast WiFi", value: "" },
 ];
 
 export function Hero() {
@@ -17,7 +17,7 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         <img
           src={poolSunset}
-          alt="Villa Siam pool med solnedgång"
+          alt="Villa Siam pool at sunset"
           className="w-full h-full object-cover"
         />
         <div 
@@ -61,8 +61,8 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-xl font-light"
           >
-            Upplev paradiset i vår privata thailändska villa med infinity pool 
-            och fantastisk havsutsikt.
+            Experience paradise in our private Thai villa with infinity pool 
+            and stunning ocean views.
           </motion.p>
 
           {/* Quick Facts */}
@@ -96,14 +96,14 @@ export function Hero() {
               size="lg"
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 text-base px-8 py-6 rounded-full shadow-strong"
             >
-              Boka nu
+              Book Now
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground/10 text-base px-8 py-6 rounded-full backdrop-blur-sm"
             >
-              Skicka förfrågan
+              Send Inquiry
             </Button>
           </motion.div>
         </motion.div>

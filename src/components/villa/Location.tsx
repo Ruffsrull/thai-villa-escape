@@ -3,9 +3,9 @@ import { useRef } from "react";
 import { MapPin, Plane, UtensilsCrossed, ShoppingBag, Palmtree } from "lucide-react";
 
 const distances = [
-  { icon: Plane, name: "Samui flygplats", distance: "15 min", detail: "10 km" },
-  { icon: Palmtree, name: "Chaweng strand", distance: "10 min", detail: "5 km" },
-  { icon: UtensilsCrossed, name: "Restauranger", distance: "5 min", detail: "Gångavstånd" },
+  { icon: Plane, name: "Samui Airport", distance: "15 min", detail: "10 km" },
+  { icon: Palmtree, name: "Chaweng Beach", distance: "10 min", detail: "5 km" },
+  { icon: UtensilsCrossed, name: "Restaurants", distance: "5 min", detail: "Walking distance" },
   { icon: ShoppingBag, name: "Central Festival", distance: "8 min", detail: "4 km" },
 ];
 
@@ -24,21 +24,21 @@ export function Location() {
             transition={{ duration: 0.8 }}
           >
             <span className="text-ocean font-medium text-sm tracking-widest uppercase mb-4 block">
-              Läge
+              Location
             </span>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
-              Perfekt beläget på Koh Samui
+              Perfectly Located on Koh Samui
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              Villa Siam ligger på en naturskön kulle i Bophut med fantastisk 
-              utsikt över havet och solnedgången. Nära till stränder, restauranger 
-              och shoppingområden, men ändå lugnt och privat.
+              Villa Siam is located on a scenic hillside in Bophut with stunning 
+              views of the ocean and sunset. Close to beaches, restaurants 
+              and shopping areas, yet peaceful and private.
             </p>
 
             <div className="flex items-start gap-3 mb-8 p-4 bg-card rounded-xl border border-border">
               <MapPin className="w-5 h-5 text-ocean flex-shrink-0 mt-0.5" />
               <div>
-                <div className="font-medium text-foreground">Exakt adress</div>
+                <div className="font-medium text-foreground">Exact Address</div>
                 <div className="text-muted-foreground">
                   123 Hillside Road, Bophut, Koh Samui, Surat Thani 84320, Thailand
                 </div>

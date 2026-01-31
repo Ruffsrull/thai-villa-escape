@@ -4,12 +4,12 @@ import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
-  { label: "Villan", href: "#about" },
-  { label: "Galleri", href: "#gallery" },
-  { label: "Bekvämligheter", href: "#amenities" },
-  { label: "Område", href: "#location" },
-  { label: "Praktisk info", href: "#info" },
-  { label: "Kontakt", href: "#contact" },
+  { label: "The Villa", href: "#about" },
+  { label: "Gallery", href: "#gallery" },
+  { label: "Amenities", href: "#amenities" },
+  { label: "Location", href: "#location" },
+  { label: "Info", href: "#info" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export function Header() {
@@ -47,7 +47,7 @@ export function Header() {
                 <span className="hidden xl:inline">+66 123 456 789</span>
               </Button>
               <Button className="bg-gradient-ocean text-primary-foreground hover:opacity-90 transition-opacity">
-                Boka nu
+                Book Now
               </Button>
             </div>
 
@@ -85,7 +85,7 @@ export function Header() {
               ))}
               <div className="pt-4 border-t border-border mt-2">
                 <Button className="w-full bg-gradient-ocean text-primary-foreground">
-                  Boka nu
+                  Book Now
                 </Button>
               </div>
             </nav>

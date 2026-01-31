@@ -7,13 +7,33 @@ import poolNight from "@/assets/pool-night.jpg";
 import infinityPool from "@/assets/infinity-pool.jpg";
 import bedroom from "@/assets/bedroom.jpg";
 import villaExterior from "@/assets/villa-exterior.jpg";
+import bedroomCanopy from "@/assets/bedroom-canopy.jpg";
+import bedroomPoolView from "@/assets/bedroom-pool-view.jpg";
+import balconyView from "@/assets/balcony-view.jpg";
+import bedroomBalcony from "@/assets/bedroom-balcony.jpg";
+import bedroomCrib from "@/assets/bedroom-crib.jpg";
+import villaSeaview from "@/assets/villa-seaview.jpg";
+import kitchenSink from "@/assets/kitchen-sink.jpg";
+import kitchenStove from "@/assets/kitchen-stove.jpg";
+import kitchenFridge from "@/assets/kitchen-fridge.jpg";
+import livingRoom from "@/assets/living-room.jpg";
 
 const images = [
-  { src: poolNight, alt: "Pool vid natt", category: "Pool" },
-  { src: bedroom, alt: "Sovrum med himmelsäng", category: "Sovrum" },
-  { src: infinityPool, alt: "Infinity pool med havsutsikt", category: "Utsikt" },
-  { src: poolSunset, alt: "Pool vid solnedgång", category: "Pool" },
-  { src: villaExterior, alt: "Villa exteriör", category: "Exteriör" },
+  { src: poolNight, alt: "Pool at night", category: "Pool" },
+  { src: bedroom, alt: "Bedroom with canopy bed", category: "Bedroom" },
+  { src: infinityPool, alt: "Infinity pool with ocean view", category: "View" },
+  { src: poolSunset, alt: "Pool at sunset", category: "Pool" },
+  { src: villaExterior, alt: "Villa exterior", category: "Exterior" },
+  { src: bedroomCanopy, alt: "Master bedroom with canopy", category: "Bedroom" },
+  { src: bedroomPoolView, alt: "Bedroom with pool view", category: "Bedroom" },
+  { src: livingRoom, alt: "Living room with Thai decor", category: "Interior" },
+  { src: villaSeaview, alt: "Villa with sea view", category: "Exterior" },
+  { src: balconyView, alt: "Balcony with ocean view", category: "View" },
+  { src: bedroomBalcony, alt: "Bedroom with balcony", category: "Bedroom" },
+  { src: bedroomCrib, alt: "Bedroom with baby crib", category: "Bedroom" },
+  { src: kitchenStove, alt: "Modern kitchen with stove", category: "Kitchen" },
+  { src: kitchenSink, alt: "Kitchen with double sink", category: "Kitchen" },
+  { src: kitchenFridge, alt: "Kitchen with large refrigerator", category: "Kitchen" },
 ];
 
 export function Gallery() {
@@ -43,21 +63,21 @@ export function Gallery() {
           className="text-center mb-16"
         >
           <span className="text-ocean font-medium text-sm tracking-widest uppercase mb-4 block">
-            Galleri
+            Gallery
           </span>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground">
-            Utforska villan
+            Explore the Villa
           </h2>
         </motion.div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {images.map((image, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              transition={{ duration: 0.6, delay: index * 0.05 }}
               className={`relative overflow-hidden rounded-xl cursor-pointer group ${
                 index === 0 ? "md:col-span-2 md:row-span-2" : ""
               }`}
