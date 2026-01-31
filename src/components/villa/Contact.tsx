@@ -21,8 +21,8 @@ export function Contact() {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     
     toast({
-      title: "Meddelande skickat!",
-      description: "Vi återkommer till dig så snart som möjligt.",
+      title: "Message sent!",
+      description: "We will get back to you as soon as possible.",
     });
     
     setIsSubmitting(false);
@@ -50,14 +50,14 @@ export function Contact() {
             transition={{ duration: 0.8 }}
           >
             <span className="text-ocean-light font-medium text-sm tracking-widest uppercase mb-4 block">
-              Kontakt
+              Contact
             </span>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-primary-foreground mb-6 leading-tight">
-              Redo att boka ditt paradis?
+              Ready to book your paradise?
             </h2>
             <p className="text-primary-foreground/80 text-lg leading-relaxed mb-8">
-              Har du frågor eller vill boka villan? Kontakta oss så hjälper vi 
-              dig att planera din drömresa till Thailand.
+              Have questions or want to book the villa? Contact us and we'll help 
+              you plan your dream trip to Thailand.
             </p>
 
             <div className="space-y-4">
@@ -82,7 +82,7 @@ export function Contact() {
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-sm text-primary-foreground/60">Telefon</div>
+                  <div className="text-sm text-primary-foreground/60">Phone</div>
                   <div className="font-medium">+66 123 456 789</div>
                 </div>
               </a>
@@ -98,7 +98,7 @@ export function Contact() {
                 </div>
                 <div>
                   <div className="text-sm text-primary-foreground/60">WhatsApp</div>
-                  <div className="font-medium">Chatta med oss</div>
+                  <div className="font-medium">Chat with us</div>
                 </div>
               </a>
             </div>
@@ -115,18 +115,18 @@ export function Contact() {
               className="bg-card p-8 md:p-10 rounded-2xl shadow-strong"
             >
               <h3 className="font-serif text-2xl text-foreground mb-6">
-                Skicka förfrågan
+                Send Inquiry
               </h3>
 
               <div className="space-y-4">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">
-                      Namn *
+                      Name *
                     </label>
                     <Input
                       name="name"
-                      placeholder="Ditt namn"
+                      placeholder="Your name"
                       required
                       className="bg-background"
                     />
@@ -138,7 +138,7 @@ export function Contact() {
                     <Input
                       name="email"
                       type="email"
-                      placeholder="din@email.com"
+                      placeholder="your@email.com"
                       required
                       className="bg-background"
                     />
@@ -148,7 +148,7 @@ export function Contact() {
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">
-                      Incheckning
+                      Check-in
                     </label>
                     <Input
                       name="checkin"
@@ -158,7 +158,7 @@ export function Contact() {
                   </div>
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">
-                      Utcheckning
+                      Check-out
                     </label>
                     <Input
                       name="checkout"
@@ -170,25 +170,25 @@ export function Contact() {
 
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">
-                    Antal gäster
+                    Number of Guests
                   </label>
                   <Input
                     name="guests"
                     type="number"
                     min="1"
                     max="8"
-                    placeholder="1-8 gäster"
+                    placeholder="1-8 guests"
                     className="bg-background"
                   />
                 </div>
 
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">
-                    Meddelande
+                    Message
                   </label>
                   <Textarea
                     name="message"
-                    placeholder="Berätta om dina önskemål..."
+                    placeholder="Tell us about your wishes..."
                     rows={4}
                     className="bg-background resize-none"
                   />
@@ -201,11 +201,11 @@ export function Contact() {
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (
-                    "Skickar..."
+                    "Sending..."
                   ) : (
                     <>
                       <Send className="w-4 h-4" />
-                      Skicka förfrågan
+                      Send Inquiry
                     </>
                   )}
                 </Button>

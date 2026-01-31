@@ -16,18 +16,18 @@ import {
 } from "lucide-react";
 
 const amenities = [
-  { icon: Waves, name: "Privat infinity pool", description: "10x5 meter" },
-  { icon: Wifi, name: "Snabbt WiFi", description: "100 Mbit/s" },
-  { icon: Wind, name: "Luftkonditionering", description: "I alla rum" },
-  { icon: Car, name: "Gratis parkering", description: "2 bilar" },
-  { icon: Utensils, name: "Fullt utrustat kök", description: "Modern utrustning" },
+  { icon: Waves, name: "Private infinity pool", description: "10x5 meters" },
+  { icon: Wifi, name: "Fast WiFi", description: "100 Mbit/s" },
+  { icon: Wind, name: "Air conditioning", description: "In all rooms" },
+  { icon: Car, name: "Free parking", description: "2 cars" },
+  { icon: Utensils, name: "Fully equipped kitchen", description: "Modern appliances" },
   { icon: Tv, name: "Smart TV", description: "Netflix & streaming" },
-  { icon: ShowerHead, name: "4 badrum", description: "Med regndusch" },
-  { icon: TreePine, name: "Tropisk trädgård", description: "Privat område" },
-  { icon: Sun, name: "Solterrass", description: "Med solstolar" },
-  { icon: Coffee, name: "Espressomaskin", description: "Nespresso" },
-  { icon: Lock, name: "Säkert kassaskåp", description: "I varje sovrum" },
-  { icon: Shirt, name: "Tvättmaskin", description: "& torktumlare" },
+  { icon: ShowerHead, name: "4 bathrooms", description: "With rain shower" },
+  { icon: TreePine, name: "Tropical garden", description: "Private area" },
+  { icon: Sun, name: "Sun terrace", description: "With sun loungers" },
+  { icon: Coffee, name: "Espresso machine", description: "Nespresso" },
+  { icon: Lock, name: "Secure safe", description: "In each bedroom" },
+  { icon: Shirt, name: "Washing machine", description: "& tumble dryer" },
 ];
 
 export function Amenities() {
@@ -44,13 +44,13 @@ export function Amenities() {
           className="text-center mb-16"
         >
           <span className="text-ocean font-medium text-sm tracking-widest uppercase mb-4 block">
-            Bekvämligheter
+            Amenities
           </span>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-4">
-            Allt du behöver
+            Everything You Need
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Villa Siam är utrustad med allt för en bekväm och lyxig vistelse
+            Villa Siam is equipped with everything for a comfortable and luxurious stay
           </p>
         </motion.div>
 

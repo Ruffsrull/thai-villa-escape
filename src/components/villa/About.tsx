@@ -5,13 +5,13 @@ import { Check } from "lucide-react";
 import villaExterior from "@/assets/villa-exterior.jpg";
 
 const included = [
-  "Daglig städning",
-  "Poolunderhåll",
+  "Daily housekeeping",
+  "Pool maintenance",
   "WiFi 100 Mbit/s",
-  "Luftkonditionering",
-  "Fullt utrustat kök",
-  "Handdukar & sängkläder",
-  "Välkomstpaket",
+  "Air conditioning",
+  "Fully equipped kitchen",
+  "Towels & linens",
+  "Welcome package",
   "24/7 support",
 ];
 
@@ -33,13 +33,13 @@ export function About() {
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-strong">
               <img
                 src={villaExterior}
-                alt="Villa Siam exteriör"
+                alt="Villa Siam exterior"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-6 rounded-2xl shadow-medium hidden md:block">
               <div className="text-4xl font-serif font-semibold">4</div>
-              <div className="text-sm opacity-90">sovrum</div>
+              <div className="text-sm opacity-90">bedrooms</div>
             </div>
           </motion.div>
 
@@ -50,21 +50,21 @@ export function About() {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           >
             <span className="text-ocean font-medium text-sm tracking-widest uppercase mb-4 block">
-              Om villan
+              About the Villa
             </span>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
-              En exklusiv tillflyktsort i paradiset
+              An exclusive retreat in paradise
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Villa Siam är en traditionell thailändsk villa med modern komfort, 
-              belägen på en vacker kulle med panoramautsikt över havet. Med fyra 
-              rymliga sovrum, privat infinity pool och tropisk trädgård är detta 
-              den perfekta platsen för en oförglömlig semester.
+              Villa Siam is a traditional Thai villa with modern comfort, 
+              located on a beautiful hillside with panoramic ocean views. With four 
+              spacious bedrooms, private infinity pool and tropical garden, this is 
+              the perfect place for an unforgettable vacation.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              Villan erbjuder 350 kvm boyta fördelat på två våningar med öppen 
-              planlösning, stort vardagsrum och fullt utrustat kök. Varje sovrum 
-              har eget badrum och luftkonditionering.
+              The villa offers 350 sqm of living space spread over two floors with open 
+              plan layout, large living room and fully equipped kitchen. Each bedroom 
+              has its own bathroom and air conditioning.
             </p>
 
             {/* Included */}

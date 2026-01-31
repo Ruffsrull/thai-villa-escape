@@ -12,53 +12,53 @@ import {
 const infoSections = [
   {
     icon: Clock,
-    title: "In- & utcheckning",
+    title: "Check-in & Check-out",
     items: [
-      "Incheckning: från kl. 15:00",
-      "Utcheckning: senast kl. 11:00",
-      "Tidig incheckning möjlig efter förfrågan",
-      "Sen utcheckning kan ordnas mot extra kostnad",
+      "Check-in: from 3:00 PM",
+      "Check-out: by 11:00 AM",
+      "Early check-in possible upon request",
+      "Late check-out available for extra fee",
     ],
   },
   {
     icon: CreditCard,
-    title: "Betalning & Deposition",
+    title: "Payment & Deposit",
     items: [
-      "50% förskott vid bokning",
-      "Resterande belopp 30 dagar före ankomst",
-      "Deposition: 10 000 THB (återbetalas vid utcheckning)",
-      "Vi accepterar Visa, MasterCard & banköverföring",
+      "50% deposit upon booking",
+      "Remaining amount 30 days before arrival",
+      "Deposit: 10,000 THB (refunded at checkout)",
+      "We accept Visa, MasterCard & bank transfer",
     ],
   },
   {
     icon: Sparkles,
-    title: "Städning & Service",
+    title: "Cleaning & Service",
     items: [
-      "Daglig städning ingår",
-      "Poolservice dagligen",
-      "Trädgårdsunderhåll 2 ggr/vecka",
-      "Extra städning kan bokas",
+      "Daily housekeeping included",
+      "Daily pool service",
+      "Garden maintenance 2x/week",
+      "Extra cleaning can be arranged",
     ],
   },
   {
     icon: Shield,
-    title: "Säkerhet",
+    title: "Security",
     items: [
-      "Övervakningskameror (endast utomhus)",
-      "Säkert kassaskåp i varje sovrum",
-      "Brandvarnare i alla rum",
-      "24/7 telefonjour",
+      "CCTV cameras (outdoor only)",
+      "Secure safe in each bedroom",
+      "Smoke detectors in all rooms",
+      "24/7 phone support",
     ],
   },
 ];
 
 const rules = [
-  { allowed: false, text: "Rökning inomhus ej tillåtet" },
-  { allowed: false, text: "Husdjur ej tillåtna" },
-  { allowed: false, text: "Inga fester eller evenemang" },
-  { allowed: true, text: "Max 8 gäster" },
-  { allowed: true, text: "Barn välkomna" },
-  { allowed: true, text: "Rökning tillåtet på terrassen" },
+  { allowed: false, text: "No smoking indoors" },
+  { allowed: false, text: "No pets allowed" },
+  { allowed: false, text: "No parties or events" },
+  { allowed: true, text: "Max 8 guests" },
+  { allowed: true, text: "Children welcome" },
+  { allowed: true, text: "Smoking allowed on terrace" },
 ];
 
 export function PracticalInfo() {
@@ -78,10 +78,10 @@ export function PracticalInfo() {
             Information
           </span>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-4">
-            Praktisk information
+            Practical Information
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Allt du behöver veta inför din vistelse
+            Everything you need to know before your stay
           </p>
         </motion.div>
 
@@ -126,7 +126,7 @@ export function PracticalInfo() {
               <AlertCircle className="w-5 h-5 text-sunset" />
             </div>
             <h3 className="font-serif text-xl font-medium text-foreground">
-              Husregler
+              House Rules
             </h3>
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
