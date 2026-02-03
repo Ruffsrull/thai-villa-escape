@@ -1,23 +1,26 @@
 import { motion } from "framer-motion";
 import { Users, Bed, Waves, Wifi, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 import poolSunset from "@/assets/pool-sunset.jpg";
 
-const quickFacts = [
-  { icon: Users, label: "8 guests", value: "max" },
-  { icon: Bed, label: "4 bedrooms", value: "" },
-  { icon: Waves, label: "Private pool", value: "" },
-  { icon: Wifi, label: "Fiber Internet", value: "" },
-];
-
 export function Hero() {
+  const { t } = useTranslation();
+
+  const quickFacts = [
+    { icon: Users, label: t('hero.guests') },
+    { icon: Bed, label: t('hero.bedrooms') },
+    { icon: Waves, label: t('hero.privatePool') },
+    { icon: Wifi, label: t('hero.fiberInternet') },
+  ];
+
   return (
     <section className="relative min-h-screen flex items-end pb-20 pt-32 overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
           src={poolSunset}
-          alt="Villa Siam pool at sunset"
+          alt="Cape Villa pool at sunset"
           className="w-full h-full object-cover"
         />
         <div 
@@ -42,7 +45,7 @@ export function Hero() {
           >
             <MapPin className="w-4 h-4" />
             <span className="text-sm font-medium tracking-wide uppercase">
-              Cape Mae Phim, Rayong, Thailand
+              {t('hero.location')}
             </span>
           </motion.div>
 
@@ -52,7 +55,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="font-serif text-5xl md:text-7xl lg:text-8xl font-medium text-primary-foreground mb-6 leading-tight"
           >
-            Villa Siam
+            {t('brand.name')}
           </motion.h1>
 
           <motion.p
@@ -61,8 +64,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-xl font-light"
           >
-            Experience paradise in our private Thai villa with infinity pool 
-            and stunning ocean views.
+            {t('hero.tagline')}
           </motion.p>
 
           {/* Quick Facts */}
@@ -96,14 +98,14 @@ export function Hero() {
               size="lg"
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 text-base px-8 py-6 rounded-full shadow-strong"
             >
-              Book Now
+              {t('nav.bookNow')}
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground/10 text-base px-8 py-6 rounded-full backdrop-blur-sm"
             >
-              Send Inquiry
+              {t('nav.sendInquiry')}
             </Button>
           </motion.div>
         </motion.div>

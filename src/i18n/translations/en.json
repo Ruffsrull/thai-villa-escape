@@ -1,0 +1,189 @@
+{
+  "brand": {
+    "name": "Cape Villa"
+  },
+  "nav": {
+    "theVilla": "The Villa",
+    "gallery": "Gallery",
+    "amenities": "Amenities",
+    "location": "Location",
+    "info": "Info",
+    "contact": "Contact",
+    "bookNow": "Book Now",
+    "sendInquiry": "Send Inquiry"
+  },
+  "hero": {
+    "location": "Cape Mae Phim, Rayong, Thailand",
+    "tagline": "Experience paradise in our private Thai villa with infinity pool and stunning ocean views.",
+    "guests": "8 guests",
+    "bedrooms": "4 bedrooms",
+    "privatePool": "Private pool",
+    "fiberInternet": "Fiber Internet"
+  },
+  "about": {
+    "label": "Welcome",
+    "title": "Your Private Paradise in Thailand",
+    "description": "Cape Villa is an exclusive 4-bedroom villa located in the peaceful Cape Mae Phim area. Here you'll find everything needed for a dream vacation – from a sparkling infinity pool with ocean views to spacious living areas that blend indoor and outdoor living seamlessly.",
+    "features": {
+      "bedrooms": "4 spacious bedrooms",
+      "bedroomsDesc": "Comfortable sleeping for up to 8 guests with quality beds and air conditioning",
+      "pool": "Private infinity pool",
+      "poolDesc": "Stunning pool with ocean views, perfect for sunrise swims and sunset cocktails",
+      "kitchen": "Fully equipped kitchen",
+      "kitchenDesc": "Modern kitchen with everything you need to prepare delicious meals",
+      "wifi": "Fiber Internet",
+      "wifiDesc": "High-speed fiber connection for work and entertainment"
+    }
+  },
+  "gallery": {
+    "label": "Gallery",
+    "title": "Explore the Villa",
+    "categories": {
+      "all": "All",
+      "pool": "Pool",
+      "bedroom": "Bedroom",
+      "interior": "Interior",
+      "kitchen": "Kitchen",
+      "view": "View",
+      "exterior": "Exterior"
+    }
+  },
+  "amenities": {
+    "label": "Amenities",
+    "title": "Everything You Need",
+    "description": "Cape Villa is equipped with all modern amenities to ensure a comfortable and relaxing stay.",
+    "categories": {
+      "essentials": "Essentials",
+      "comfort": "Comfort & Entertainment",
+      "outdoor": "Outdoor & Wellness",
+      "services": "Services"
+    },
+    "items": {
+      "fiberInternet": "Fiber Internet",
+      "airConditioning": "Air Conditioning",
+      "hotWater": "Hot Water",
+      "fullyEquippedKitchen": "Fully Equipped Kitchen",
+      "washingMachine": "Washing Machine",
+      "freeParking": "Free Parking",
+      "flatscreenTV": "Flatscreen TV",
+      "netflixStreaming": "Netflix & Streaming",
+      "bluetoothSpeaker": "Bluetooth Speaker",
+      "boardGames": "Board Games",
+      "qualityBedLinens": "Quality Bed Linens",
+      "towelsProvided": "Towels Provided",
+      "privatePool": "Private Pool",
+      "sunLoungers": "Sun Loungers",
+      "outdoorDining": "Outdoor Dining",
+      "tropicalGarden": "Tropical Garden",
+      "sunsetView": "Sunset View",
+      "bbqGrill": "BBQ Grill",
+      "dailyHousekeeping": "Daily Housekeeping",
+      "airportTransfer": "Airport Transfer",
+      "privateChef": "Private Chef",
+      "scooterRental": "Scooter Rental",
+      "laundryService": "Laundry Service",
+      "localGuide": "Local Guide"
+    },
+    "requestInfo": "On request"
+  },
+  "location": {
+    "label": "Location",
+    "title": "Cape Mae Phim, Rayong",
+    "description": "Cape Villa is located in the peaceful Cape Mae Phim area, one of Thailand's best-kept secrets. Just 2.5 hours from Bangkok, this serene coastal retreat offers pristine beaches, excellent seafood restaurants, and easy access to Koh Samet and other beautiful islands. The area is popular with Thai families and expats seeking a quieter alternative to Pattaya.",
+    "addressLabel": "Address",
+    "address": "Cape Mae Phim 19, Klaeng District, Rayong 21190, Thailand",
+    "distances": {
+      "utapao": "U-Tapao Airport",
+      "utapaoTime": "45 min",
+      "utapaoDetail": "50 km",
+      "beach": "Mae Phim Beach",
+      "beachTime": "5 min",
+      "beachDetail": "Walking distance",
+      "kohSamet": "Koh Samet Ferry",
+      "kohSametTime": "25 min",
+      "kohSametDetail": "Ban Phe pier",
+      "restaurants": "Beach Restaurants",
+      "restaurantsTime": "5 min",
+      "restaurantsDetail": "60+ options",
+      "shopping": "Tesco Lotus",
+      "shoppingTime": "15 min",
+      "shoppingDetail": "Klaeng",
+      "snorkeling": "Koh Mun Nai",
+      "snorkelingTime": "30 min",
+      "snorkelingDetail": "Snorkeling island"
+    }
+  },
+  "practicalInfo": {
+    "label": "Practical Info",
+    "title": "Good to Know",
+    "sections": {
+      "checkInOut": {
+        "title": "Check-in & Check-out",
+        "checkIn": "Check-in: 14:00",
+        "checkOut": "Check-out: 11:00",
+        "flexible": "Flexible times available on request",
+        "keyHandover": "Key handover at the villa"
+      },
+      "houseRules": {
+        "title": "House Rules",
+        "noSmoking": "No smoking indoors",
+        "noPets": "No pets",
+        "noParties": "No parties or events",
+        "quietHours": "Quiet hours: 22:00 - 08:00",
+        "maxGuests": "Maximum 8 guests"
+      },
+      "included": {
+        "title": "What's Included",
+        "housekeeping": "Daily housekeeping",
+        "utilities": "Electricity & water",
+        "wifi": "Fiber Internet",
+        "poolMaintenance": "Pool maintenance",
+        "linens": "Bed linens & towels",
+        "welcomePack": "Welcome pack"
+      },
+      "payment": {
+        "title": "Payment & Deposit",
+        "deposit": "30% deposit to confirm booking",
+        "balance": "Remaining 70% due 30 days before arrival",
+        "security": "Security deposit: 5,000 THB",
+        "methods": "Payment via bank transfer or PayPal"
+      }
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Get in Touch",
+    "description": "Have questions or want to book your stay? We'd love to hear from you.",
+    "callUs": "Call Us",
+    "available": "Available 9:00-21:00 (Thailand time)",
+    "emailUs": "Email Us",
+    "responseTime": "We respond within 24 hours",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "dates": "Preferred dates",
+      "datesPlaceholder": "e.g., Dec 15-22, 2024",
+      "guests": "Number of guests",
+      "guestsPlaceholder": "Number of guests",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your trip...",
+      "submit": "Send Inquiry",
+      "successTitle": "Inquiry sent!",
+      "successDescription": "We will get back to you within 24 hours.",
+      "errorTitle": "Something went wrong",
+      "errorDescription": "Please try again or email us directly."
+    }
+  },
+  "footer": {
+    "description": "An exclusive Thai villa with private pool and stunning ocean views. Your dream vacation starts here.",
+    "quickLinks": "Quick Links",
+    "aboutVilla": "About the Villa",
+    "language": "Language",
+    "copyright": "© {year} Cape Villa. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "bookingTerms": "Booking Terms",
+    "gdpr": "GDPR"
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "brand": {
+    "name": "Cape Villa"
+  },
+  "nav": {
+    "theVilla": "Villan",
+    "gallery": "Galleri",
+    "amenities": "Bekvämligheter",
+    "location": "Läge",
+    "info": "Info",
+    "contact": "Kontakt",
+    "bookNow": "Boka nu",
+    "sendInquiry": "Skicka förfrågan"
+  },
+  "hero": {
+    "location": "Cape Mae Phim, Rayong, Thailand",
+    "tagline": "Upplev paradiset i vår privata thailändska villa med infinity-pool och fantastisk havsutsikt.",
+    "guests": "8 gäster",
+    "bedrooms": "4 sovrum",
+    "privatePool": "Privat pool",
+    "fiberInternet": "Fiberinternet"
+  },
+  "about": {
+    "label": "Välkommen",
+    "title": "Ditt privata paradis i Thailand",
+    "description": "Cape Villa är en exklusiv 4-sovrumsvillsa belägen i det fridfulla Cape Mae Phim-området. Här hittar du allt för en drömrik semester – från en gnistrande infinity-pool med havsutsikt till rymliga vardagsrum som blandar inomhus- och utomhusliv sömlöst.",
+    "features": {
+      "bedrooms": "4 rymliga sovrum",
+      "bedroomsDesc": "Bekväm sömn för upp till 8 gäster med kvalitetssängar och luftkonditionering",
+      "pool": "Privat infinity-pool",
+      "poolDesc": "Fantastisk pool med havsutsikt, perfekt för soluppgångssimning och solnedgångscocktails",
+      "kitchen": "Fullt utrustat kök",
+      "kitchenDesc": "Modernt kök med allt du behöver för att laga läckra måltider",
+      "wifi": "Fiberinternet",
+      "wifiDesc": "Höghastighetsanslutning för arbete och underhållning"
+    }
+  },
+  "gallery": {
+    "label": "Galleri",
+    "title": "Utforska villan",
+    "categories": {
+      "all": "Alla",
+      "pool": "Pool",
+      "bedroom": "Sovrum",
+      "interior": "Interiör",
+      "kitchen": "Kök",
+      "view": "Utsikt",
+      "exterior": "Exteriör"
+    }
+  },
+  "amenities": {
+    "label": "Bekvämligheter",
+    "title": "Allt du behöver",
+    "description": "Cape Villa är utrustad med alla moderna bekvämligheter för en bekväm och avkopplande vistelse.",
+    "categories": {
+      "essentials": "Grundläggande",
+      "comfort": "Komfort & Underhållning",
+      "outdoor": "Utomhus & Wellness",
+      "services": "Tjänster"
+    },
+    "items": {
+      "fiberInternet": "Fiberinternet",
+      "airConditioning": "Luftkonditionering",
+      "hotWater": "Varmvatten",
+      "fullyEquippedKitchen": "Fullt utrustat kök",
+      "washingMachine": "Tvättmaskin",
+      "freeParking": "Gratis parkering",
+      "flatscreenTV": "Plattskärms-TV",
+      "netflixStreaming": "Netflix & Streaming",
+      "bluetoothSpeaker": "Bluetooth-högtalare",
+      "boardGames": "Sällskapsspel",
+      "qualityBedLinens": "Kvalitetssängkläder",
+      "towelsProvided": "Handdukar ingår",
+      "privatePool": "Privat pool",
+      "sunLoungers": "Solstolar",
+      "outdoorDining": "Utomhusmiddag",
+      "tropicalGarden": "Tropisk trädgård",
+      "sunsetView": "Solnedgångsutsikt",
+      "bbqGrill": "BBQ-grill",
+      "dailyHousekeeping": "Daglig städning",
+      "airportTransfer": "Flygplatstransfer",
+      "privateChef": "Privat kock",
+      "scooterRental": "Skoteruthyrning",
+      "laundryService": "Tvättservice",
+      "localGuide": "Lokal guide"
+    },
+    "requestInfo": "På begäran"
+  },
+  "location": {
+    "label": "Läge",
+    "title": "Cape Mae Phim, Rayong",
+    "description": "Cape Villa ligger i det fridfulla Cape Mae Phim-området, en av Thailands bäst bevarade hemligheter. Bara 2,5 timmar från Bangkok erbjuder denna lugna kustort orörda stränder, utmärkta fiskrestauranger och enkel tillgång till Koh Samet och andra vackra öar. Området är populärt bland thailändska familjer och expats som söker ett lugnare alternativ till Pattaya.",
+    "addressLabel": "Adress",
+    "address": "Cape Mae Phim 19, Klaeng-distriktet, Rayong 21190, Thailand",
+    "distances": {
+      "utapao": "U-Tapao flygplats",
+      "utapaoTime": "45 min",
+      "utapaoDetail": "50 km",
+      "beach": "Mae Phim strand",
+      "beachTime": "5 min",
+      "beachDetail": "Gångavstånd",
+      "kohSamet": "Koh Samet-färja",
+      "kohSametTime": "25 min",
+      "kohSametDetail": "Ban Phe-piren",
+      "restaurants": "Strandrestauranger",
+      "restaurantsTime": "5 min",
+      "restaurantsDetail": "60+ alternativ",
+      "shopping": "Tesco Lotus",
+      "shoppingTime": "15 min",
+      "shoppingDetail": "Klaeng",
+      "snorkeling": "Koh Mun Nai",
+      "snorkelingTime": "30 min",
+      "snorkelingDetail": "Snorklingsö"
+    }
+  },
+  "practicalInfo": {
+    "label": "Praktisk info",
+    "title": "Bra att veta",
+    "sections": {
+      "checkInOut": {
+        "title": "In- & utcheckning",
+        "checkIn": "Incheckning: 14:00",
+        "checkOut": "Utcheckning: 11:00",
+        "flexible": "Flexibla tider finns på begäran",
+        "keyHandover": "Nyckelöverlämning vid villan"
+      },
+      "houseRules": {
+        "title": "Husregler",
+        "noSmoking": "Rökning förbjuden inomhus",
+        "noPets": "Inga husdjur",
+        "noParties": "Inga fester eller evenemang",
+        "quietHours": "Tysta timmar: 22:00 - 08:00",
+        "maxGuests": "Max 8 gäster"
+      },
+      "included": {
+        "title": "Vad som ingår",
+        "housekeeping": "Daglig städning",
+        "utilities": "El & vatten",
+        "wifi": "Fiberinternet",
+        "poolMaintenance": "Poolunderhåll",
+        "linens": "Sängkläder & handdukar",
+        "welcomePack": "Välkomstpaket"
+      },
+      "payment": {
+        "title": "Betalning & deposition",
+        "deposit": "30% deposition för att bekräfta bokning",
+        "balance": "Resterande 70% betalas 30 dagar före ankomst",
+        "security": "Säkerhetsdeposition: 5 000 THB",
+        "methods": "Betalning via banköverföring eller PayPal"
+      }
+    }
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Kontakta oss",
+    "description": "Har du frågor eller vill boka din vistelse? Vi vill gärna höra från dig.",
+    "callUs": "Ring oss",
+    "available": "Tillgänglig 9:00-21:00 (Thailand-tid)",
+    "emailUs": "Maila oss",
+    "responseTime": "Vi svarar inom 24 timmar",
+    "form": {
+      "name": "Namn",
+      "namePlaceholder": "Ditt namn",
+      "email": "E-post",
+      "emailPlaceholder": "din@email.se",
+      "dates": "Önskade datum",
+      "datesPlaceholder": "t.ex. 15-22 dec 2024",
+      "guests": "Antal gäster",
+      "guestsPlaceholder": "Antal gäster",
+      "message": "Meddelande",
+      "messagePlaceholder": "Berätta om din resa...",
+      "submit": "Skicka förfrågan",
+      "successTitle": "Förfrågan skickad!",
+      "successDescription": "Vi återkommer inom 24 timmar.",
+      "errorTitle": "Något gick fel",
+      "errorDescription": "Försök igen eller maila oss direkt."
+    }
+  },
+  "footer": {
+    "description": "En exklusiv thailändsk villa med privat pool och fantastisk havsutsikt. Din drömsemester börjar här.",
+    "quickLinks": "Snabblänkar",
+    "aboutVilla": "Om villan",
+    "language": "Språk",
+    "copyright": "© {year} Cape Villa. Alla rättigheter förbehållna.",
+    "privacyPolicy": "Integritetspolicy",
+    "bookingTerms": "Bokningsvillkor",
+    "gdpr": "GDPR"
+  }
+}

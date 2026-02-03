@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
 import { useRef } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import poolSunset from "@/assets/pool-sunset.jpg";
 import poolNight from "@/assets/pool-night.jpg";
 import infinityPool from "@/assets/infinity-pool.jpg";
@@ -18,28 +19,29 @@ import kitchenStove from "@/assets/kitchen-stove.jpg";
 import kitchenFridge from "@/assets/kitchen-fridge.jpg";
 import livingRoom from "@/assets/living-room.jpg";
 
-const images = [
-  { src: poolNight, alt: "Pool at night", category: "Pool" },
-  { src: bedroom, alt: "Bedroom with canopy bed", category: "Bedroom" },
-  { src: infinityPool, alt: "Infinity pool with ocean view", category: "View" },
-  { src: poolSunset, alt: "Pool at sunset", category: "Pool" },
-  { src: villaExterior, alt: "Villa exterior", category: "Exterior" },
-  { src: bedroomCanopy, alt: "Master bedroom with canopy", category: "Bedroom" },
-  { src: bedroomPoolView, alt: "Bedroom with pool view", category: "Bedroom" },
-  { src: livingRoom, alt: "Living room with Thai decor", category: "Interior" },
-  { src: villaSeaview, alt: "Villa with sea view", category: "Exterior" },
-  { src: balconyView, alt: "Balcony with ocean view", category: "View" },
-  { src: bedroomBalcony, alt: "Bedroom with balcony", category: "Bedroom" },
-  { src: bedroomCrib, alt: "Bedroom with baby crib", category: "Bedroom" },
-  { src: kitchenStove, alt: "Modern kitchen with stove", category: "Kitchen" },
-  { src: kitchenSink, alt: "Kitchen with double sink", category: "Kitchen" },
-  { src: kitchenFridge, alt: "Kitchen with large refrigerator", category: "Kitchen" },
-];
-
 export function Gallery() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { t } = useTranslation();
+
+  const images = [
+    { src: poolNight, alt: "Pool at night", category: t('gallery.categories.pool') },
+    { src: bedroom, alt: "Bedroom with canopy bed", category: t('gallery.categories.bedroom') },
+    { src: infinityPool, alt: "Infinity pool with ocean view", category: t('gallery.categories.view') },
+    { src: poolSunset, alt: "Pool at sunset", category: t('gallery.categories.pool') },
+    { src: villaExterior, alt: "Villa exterior", category: t('gallery.categories.exterior') },
+    { src: bedroomCanopy, alt: "Master bedroom with canopy", category: t('gallery.categories.bedroom') },
+    { src: bedroomPoolView, alt: "Bedroom with pool view", category: t('gallery.categories.bedroom') },
+    { src: livingRoom, alt: "Living room with Thai decor", category: t('gallery.categories.interior') },
+    { src: villaSeaview, alt: "Villa with sea view", category: t('gallery.categories.exterior') },
+    { src: balconyView, alt: "Balcony with ocean view", category: t('gallery.categories.view') },
+    { src: bedroomBalcony, alt: "Bedroom with balcony", category: t('gallery.categories.bedroom') },
+    { src: bedroomCrib, alt: "Bedroom with baby crib", category: t('gallery.categories.bedroom') },
+    { src: kitchenStove, alt: "Modern kitchen with stove", category: t('gallery.categories.kitchen') },
+    { src: kitchenSink, alt: "Kitchen with double sink", category: t('gallery.categories.kitchen') },
+    { src: kitchenFridge, alt: "Kitchen with large refrigerator", category: t('gallery.categories.kitchen') },
+  ];
 
   const handlePrev = () => {
     if (selectedImage !== null) {
@@ -63,10 +65,10 @@ export function Gallery() {
           className="text-center mb-16"
         >
           <span className="text-ocean font-medium text-sm tracking-widest uppercase mb-4 block">
-            Gallery
+            {t('gallery.label')}
           </span>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground">
-            Explore the Villa
+            {t('gallery.title')}
           </h2>
         </motion.div>
 

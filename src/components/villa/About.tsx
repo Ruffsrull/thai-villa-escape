@@ -2,22 +2,24 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Check } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import villaExterior from "@/assets/villa-exterior.jpg";
-
-const included = [
-  "Daily housekeeping",
-  "Pool maintenance",
-  "Fiber Internet",
-  "Air conditioning",
-  "Fully equipped kitchen",
-  "Towels & linens",
-  "Welcome package",
-  "24/7 support",
-];
 
 export function About() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { t } = useTranslation();
+
+  const included = [
+    t('practicalInfo.sections.included.housekeeping'),
+    t('practicalInfo.sections.included.poolMaintenance'),
+    t('practicalInfo.sections.included.wifi'),
+    t('amenities.items.airConditioning'),
+    t('amenities.items.fullyEquippedKitchen'),
+    t('practicalInfo.sections.included.linens'),
+    t('practicalInfo.sections.included.welcomePack'),
+    t('amenities.items.freeParking'),
+  ];
 
   return (
     <section id="about" className="py-24 md:py-32 bg-background" ref={ref}>
@@ -33,13 +35,13 @@ export function About() {
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-strong">
               <img
                 src={villaExterior}
-                alt="Villa Siam exterior"
+                alt="Cape Villa exterior"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-6 rounded-2xl shadow-medium hidden md:block">
               <div className="text-4xl font-serif font-semibold">4</div>
-              <div className="text-sm opacity-90">bedrooms</div>
+              <div className="text-sm opacity-90">{t('hero.bedrooms').split(' ')[1] || 'bedrooms'}</div>
             </div>
           </motion.div>
 
@@ -50,21 +52,13 @@ export function About() {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           >
             <span className="text-ocean font-medium text-sm tracking-widest uppercase mb-4 block">
-              About the Villa
+              {t('about.label')}
             </span>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
-              An exclusive retreat in paradise
+              {t('about.title')}
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Villa Siam is a traditional Thai villa with modern comfort, 
-              located on a beautiful hillside with panoramic ocean views. With four 
-              spacious bedrooms, private infinity pool and tropical garden, this is 
-              the perfect place for an unforgettable vacation.
-            </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              The villa offers 350 sqm of living space spread over two floors with open 
-              plan layout, large living room and fully equipped kitchen. Each bedroom 
-              has its own bathroom and air conditioning.
+              {t('about.description')}
             </p>
 
             {/* Included */}

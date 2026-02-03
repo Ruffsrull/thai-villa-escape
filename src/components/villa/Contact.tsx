@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { useTranslation } from "react-i18next";
 import poolNight from "@/assets/pool-night.jpg";
 
 export function Contact() {
@@ -12,6 +13,7 @@ export function Contact() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { t } = useTranslation();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -21,8 +23,8 @@ export function Contact() {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     
     toast({
-      title: "Message sent!",
-      description: "We will get back to you as soon as possible.",
+      title: t('contact.form.successTitle'),
+      description: t('contact.form.successDescription'),
     });
     
     setIsSubmitting(false);
@@ -50,27 +52,26 @@ export function Contact() {
             transition={{ duration: 0.8 }}
           >
             <span className="text-ocean-light font-medium text-sm tracking-widest uppercase mb-4 block">
-              Contact
+              {t('contact.label')}
             </span>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-primary-foreground mb-6 leading-tight">
-              Ready to book your paradise?
+              {t('contact.title')}
             </h2>
             <p className="text-primary-foreground/80 text-lg leading-relaxed mb-8">
-              Have questions or want to book the villa? Contact us and we'll help 
-              you plan your dream trip to Thailand.
+              {t('contact.description')}
             </p>
 
             <div className="space-y-4">
               <a
-                href="mailto:info@villasiam.com"
+                href="mailto:info@capevilla.com"
                 className="flex items-center gap-4 text-primary-foreground/80 hover:text-primary-foreground transition-colors group"
               >
                 <div className="w-12 h-12 rounded-xl bg-primary-foreground/10 flex items-center justify-center group-hover:bg-primary-foreground/20 transition-colors">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-sm text-primary-foreground/60">Email</div>
-                  <div className="font-medium">info@villasiam.com</div>
+                  <div className="text-sm text-primary-foreground/60">{t('contact.emailUs')}</div>
+                  <div className="font-medium">info@capevilla.com</div>
                 </div>
               </a>
 
@@ -82,7 +83,7 @@ export function Contact() {
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-sm text-primary-foreground/60">Phone</div>
+                  <div className="text-sm text-primary-foreground/60">{t('contact.callUs')}</div>
                   <div className="font-medium">+66 123 456 789</div>
                 </div>
               </a>
@@ -115,30 +116,30 @@ export function Contact() {
               className="bg-card p-8 md:p-10 rounded-2xl shadow-strong"
             >
               <h3 className="font-serif text-2xl text-foreground mb-6">
-                Send Inquiry
+                {t('nav.sendInquiry')}
               </h3>
 
               <div className="space-y-4">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">
-                      Name *
+                      {t('contact.form.name')} *
                     </label>
                     <Input
                       name="name"
-                      placeholder="Your name"
+                      placeholder={t('contact.form.namePlaceholder')}
                       required
                       className="bg-background"
                     />
                   </div>
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">
-                      Email *
+                      {t('contact.form.email')} *
                     </label>
                     <Input
                       name="email"
                       type="email"
-                      placeholder="your@email.com"
+                      placeholder={t('contact.form.emailPlaceholder')}
                       required
                       className="bg-background"
                     />
@@ -170,25 +171,25 @@ export function Contact() {
 
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">
-                    Number of Guests
+                    {t('contact.form.guests')}
                   </label>
                   <Input
                     name="guests"
                     type="number"
                     min="1"
                     max="8"
-                    placeholder="1-8 guests"
+                    placeholder={t('contact.form.guestsPlaceholder')}
                     className="bg-background"
                   />
                 </div>
 
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">
-                    Message
+                    {t('contact.form.message')}
                   </label>
                   <Textarea
                     name="message"
-                    placeholder="Tell us about your wishes..."
+                    placeholder={t('contact.form.messagePlaceholder')}
                     rows={4}
                     className="bg-background resize-none"
                   />
@@ -205,7 +206,7 @@ export function Contact() {
                   ) : (
                     <>
                       <Send className="w-4 h-4" />
-                      Send Inquiry
+                      {t('contact.form.submit')}
                     </>
                   )}
                 </Button>

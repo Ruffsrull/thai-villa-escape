@@ -1,19 +1,21 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { MapPin, Plane, UtensilsCrossed, ShoppingBag, Palmtree, Ship, Waves } from "lucide-react";
-
-const distances = [
-  { icon: Plane, name: "U-Tapao Airport", distance: "45 min", detail: "50 km" },
-  { icon: Palmtree, name: "Mae Phim Beach", distance: "5 min", detail: "Walking distance" },
-  { icon: Ship, name: "Koh Samet Ferry", distance: "25 min", detail: "Ban Phe pier" },
-  { icon: UtensilsCrossed, name: "Beach Restaurants", distance: "5 min", detail: "60+ options" },
-  { icon: ShoppingBag, name: "Tesco Lotus", distance: "15 min", detail: "Klaeng" },
-  { icon: Waves, name: "Koh Mun Nai", distance: "30 min", detail: "Snorkeling island" },
-];
 
 export function Location() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { t } = useTranslation();
+
+  const distances = [
+    { icon: Plane, name: t('location.distances.utapao'), distance: t('location.distances.utapaoTime'), detail: t('location.distances.utapaoDetail') },
+    { icon: Palmtree, name: t('location.distances.beach'), distance: t('location.distances.beachTime'), detail: t('location.distances.beachDetail') },
+    { icon: Ship, name: t('location.distances.kohSamet'), distance: t('location.distances.kohSametTime'), detail: t('location.distances.kohSametDetail') },
+    { icon: UtensilsCrossed, name: t('location.distances.restaurants'), distance: t('location.distances.restaurantsTime'), detail: t('location.distances.restaurantsDetail') },
+    { icon: ShoppingBag, name: t('location.distances.shopping'), distance: t('location.distances.shoppingTime'), detail: t('location.distances.shoppingDetail') },
+    { icon: Waves, name: t('location.distances.snorkeling'), distance: t('location.distances.snorkelingTime'), detail: t('location.distances.snorkelingDetail') },
+  ];
 
   return (
     <section id="location" className="py-24 md:py-32 bg-secondary/30" ref={ref}>
@@ -26,25 +28,21 @@ export function Location() {
             transition={{ duration: 0.8 }}
           >
             <span className="text-ocean font-medium text-sm tracking-widest uppercase mb-4 block">
-              Location
+              {t('location.label')}
             </span>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
-              Cape Mae Phim, Rayong
+              {t('location.title')}
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              Villa Siam is located in the peaceful Cape Mae Phim area, one of Thailand's 
-              best-kept secrets. Just 2.5 hours from Bangkok, this serene coastal retreat 
-              offers pristine beaches, excellent seafood restaurants, and easy access to 
-              Koh Samet and other beautiful islands. The area is popular with Thai families 
-              and expats seeking a quieter alternative to Pattaya.
+              {t('location.description')}
             </p>
 
             <div className="flex items-start gap-3 mb-8 p-4 bg-card rounded-xl border border-border">
               <MapPin className="w-5 h-5 text-ocean flex-shrink-0 mt-0.5" />
               <div>
-                <div className="font-medium text-foreground">Address</div>
+                <div className="font-medium text-foreground">{t('location.addressLabel')}</div>
                 <div className="text-muted-foreground">
-                  Cape Mae Phim 19, Klaeng District, Rayong 21190, Thailand
+                  {t('location.address')}
                 </div>
               </div>
             </div>
@@ -88,7 +86,7 @@ export function Location() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Villa Siam location - Cape Mae Phim"
+              title="Cape Villa location - Cape Mae Phim"
             />
           </motion.div>
         </div>
