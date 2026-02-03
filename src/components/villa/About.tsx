@@ -7,7 +7,7 @@ import villaExterior from "@/assets/villa-exterior.jpg";
 const included = [
   "Daily housekeeping",
   "Pool maintenance",
-  "WiFi 100 Mbit/s",
+  "Fiber Internet",
   "Air conditioning",
   "Fully equipped kitchen",
   "Towels & linens",
