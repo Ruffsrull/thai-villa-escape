@@ -2,18 +2,20 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const navItems = [
-  { label: "The Villa", href: "#about" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Amenities", href: "#amenities" },
-  { label: "Location", href: "#location" },
-  { label: "Info", href: "#info" },
-  { label: "Contact", href: "#contact" },
-];
+import { useTranslation } from "react-i18next";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
+
+  const navItems = [
+    { label: t('nav.theVilla'), href: "#about" },
+    { label: t('nav.gallery'), href: "#gallery" },
+    { label: t('nav.amenities'), href: "#amenities" },
+    { label: t('nav.location'), href: "#location" },
+    { label: t('nav.info'), href: "#info" },
+    { label: t('nav.contact'), href: "#contact" },
+  ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
@@ -23,7 +25,7 @@ export function Header() {
             {/* Logo */}
             <a href="#" className="flex items-center gap-2">
               <span className="font-serif text-2xl md:text-3xl font-semibold text-primary">
-                Villa Siam
+                {t('brand.name')}
               </span>
             </a>
 
@@ -47,7 +49,7 @@ export function Header() {
                 <span className="hidden xl:inline">+66 123 456 789</span>
               </Button>
               <Button className="bg-gradient-ocean text-primary-foreground hover:opacity-90 transition-opacity">
-                Book Now
+                {t('nav.bookNow')}
               </Button>
             </div>
 
@@ -85,7 +87,7 @@ export function Header() {
               ))}
               <div className="pt-4 border-t border-border mt-2">
                 <Button className="w-full bg-gradient-ocean text-primary-foreground">
-                  Book Now
+                  {t('nav.bookNow')}
                 </Button>
               </div>
             </nav>

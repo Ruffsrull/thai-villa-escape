@@ -1,5 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Clock,
   CreditCard,
@@ -9,61 +10,62 @@ import {
   BanIcon,
 } from "lucide-react";
 
-const infoSections = [
-  {
-    icon: Clock,
-    title: "Check-in & Check-out",
-    items: [
-      "Check-in: from 3:00 PM",
-      "Check-out: by 11:00 AM",
-      "Early check-in possible upon request",
-      "Late check-out available for extra fee",
-    ],
-  },
-  {
-    icon: CreditCard,
-    title: "Payment & Deposit",
-    items: [
-      "50% deposit upon booking",
-      "Remaining amount 30 days before arrival",
-      "Deposit: 10,000 THB (refunded at checkout)",
-      "We accept Visa, MasterCard & bank transfer",
-    ],
-  },
-  {
-    icon: Sparkles,
-    title: "Cleaning & Service",
-    items: [
-      "Daily housekeeping included",
-      "Daily pool service",
-      "Garden maintenance 2x/week",
-      "Extra cleaning can be arranged",
-    ],
-  },
-  {
-    icon: Shield,
-    title: "Security",
-    items: [
-      "CCTV cameras (outdoor only)",
-      "Secure safe in each bedroom",
-      "Smoke detectors in all rooms",
-      "24/7 phone support",
-    ],
-  },
-];
-
-const rules = [
-  { allowed: false, text: "No smoking indoors" },
-  { allowed: false, text: "No pets allowed" },
-  { allowed: false, text: "No parties or events" },
-  { allowed: true, text: "Max 8 guests" },
-  { allowed: true, text: "Children welcome" },
-  { allowed: true, text: "Smoking allowed on terrace" },
-];
-
 export function PracticalInfo() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { t } = useTranslation();
+
+  const infoSections = [
+    {
+      icon: Clock,
+      title: t('practicalInfo.sections.checkInOut.title'),
+      items: [
+        t('practicalInfo.sections.checkInOut.checkIn'),
+        t('practicalInfo.sections.checkInOut.checkOut'),
+        t('practicalInfo.sections.checkInOut.flexible'),
+        t('practicalInfo.sections.checkInOut.keyHandover'),
+      ],
+    },
+    {
+      icon: CreditCard,
+      title: t('practicalInfo.sections.payment.title'),
+      items: [
+        t('practicalInfo.sections.payment.deposit'),
+        t('practicalInfo.sections.payment.balance'),
+        t('practicalInfo.sections.payment.security'),
+        t('practicalInfo.sections.payment.methods'),
+      ],
+    },
+    {
+      icon: Sparkles,
+      title: t('practicalInfo.sections.included.title'),
+      items: [
+        t('practicalInfo.sections.included.housekeeping'),
+        t('practicalInfo.sections.included.utilities'),
+        t('practicalInfo.sections.included.wifi'),
+        t('practicalInfo.sections.included.poolMaintenance'),
+      ],
+    },
+    {
+      icon: Shield,
+      title: "Security",
+      items: [
+        "CCTV cameras (outdoor only)",
+        "Secure safe in each bedroom",
+        "Smoke detectors in all rooms",
+        "24/7 phone support",
+      ],
+    },
+  ];
+
+  const rules = [
+    { allowed: false, text: t('practicalInfo.sections.houseRules.noSmoking') },
+    { allowed: false, text: t('practicalInfo.sections.houseRules.noPets') },
+    { allowed: false, text: t('practicalInfo.sections.houseRules.noParties') },
+    { allowed: true, text: t('practicalInfo.sections.houseRules.maxGuests') },
+    { allowed: true, text: "Children welcome" },
+    { allowed: true, text: "Smoking allowed on terrace" },
+  ];
 
   return (
     <section id="info" className="py-24 md:py-32 bg-background" ref={ref}>
@@ -75,10 +77,10 @@ export function PracticalInfo() {
           className="text-center mb-16"
         >
           <span className="text-ocean font-medium text-sm tracking-widest uppercase mb-4 block">
-            Information
+            {t('practicalInfo.label')}
           </span>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-4">
-            Practical Information
+            {t('practicalInfo.title')}
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Everything you need to know before your stay
@@ -126,7 +128,7 @@ export function PracticalInfo() {
               <AlertCircle className="w-5 h-5 text-sunset" />
             </div>
             <h3 className="font-serif text-xl font-medium text-foreground">
-              House Rules
+              {t('practicalInfo.sections.houseRules.title')}
             </h3>
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
