@@ -1,12 +1,14 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { MapPin, Plane, UtensilsCrossed, ShoppingBag, Palmtree } from "lucide-react";
+import { MapPin, Plane, UtensilsCrossed, ShoppingBag, Palmtree, Ship, Waves } from "lucide-react";
 
 const distances = [
-  { icon: Plane, name: "Samui Airport", distance: "15 min", detail: "10 km" },
-  { icon: Palmtree, name: "Chaweng Beach", distance: "10 min", detail: "5 km" },
-  { icon: UtensilsCrossed, name: "Restaurants", distance: "5 min", detail: "Walking distance" },
-  { icon: ShoppingBag, name: "Central Festival", distance: "8 min", detail: "4 km" },
+  { icon: Plane, name: "U-Tapao Airport", distance: "45 min", detail: "50 km" },
+  { icon: Palmtree, name: "Mae Phim Beach", distance: "5 min", detail: "Walking distance" },
+  { icon: Ship, name: "Koh Samet Ferry", distance: "25 min", detail: "Ban Phe pier" },
+  { icon: UtensilsCrossed, name: "Beach Restaurants", distance: "5 min", detail: "60+ options" },
+  { icon: ShoppingBag, name: "Tesco Lotus", distance: "15 min", detail: "Klaeng" },
+  { icon: Waves, name: "Koh Mun Nai", distance: "30 min", detail: "Snorkeling island" },
 ];
 
 export function Location() {
@@ -27,20 +29,22 @@ export function Location() {
               Location
             </span>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
-              Perfectly Located on Koh Samui
+              Cape Mae Phim, Rayong
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              Villa Siam is located on a scenic hillside in Bophut with stunning 
-              views of the ocean and sunset. Close to beaches, restaurants 
-              and shopping areas, yet peaceful and private.
+              Villa Siam is located in the peaceful Cape Mae Phim area, one of Thailand's 
+              best-kept secrets. Just 2.5 hours from Bangkok, this serene coastal retreat 
+              offers pristine beaches, excellent seafood restaurants, and easy access to 
+              Koh Samet and other beautiful islands. The area is popular with Thai families 
+              and expats seeking a quieter alternative to Pattaya.
             </p>
 
             <div className="flex items-start gap-3 mb-8 p-4 bg-card rounded-xl border border-border">
               <MapPin className="w-5 h-5 text-ocean flex-shrink-0 mt-0.5" />
               <div>
-                <div className="font-medium text-foreground">Exact Address</div>
+                <div className="font-medium text-foreground">Address</div>
                 <div className="text-muted-foreground">
-                  123 Hillside Road, Bophut, Koh Samui, Surat Thani 84320, Thailand
+                  Cape Mae Phim 19, Klaeng District, Rayong 21190, Thailand
                 </div>
               </div>
             </div>
@@ -69,7 +73,7 @@ export function Location() {
             </div>
           </motion.div>
 
-          {/* Map placeholder */}
+          {/* Map */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -77,14 +81,14 @@ export function Location() {
             className="aspect-square lg:aspect-[4/3] rounded-2xl overflow-hidden shadow-strong bg-muted"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31418.95247654127!2d99.9770723!3d9.4937631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305432c8bf91dab7%3A0x10223bc2c363ef54!2sBophut%2C%20Ko%20Samui%20District%2C%20Surat%20Thani%2C%20Thailand!5e0!3m2!1sen!2sse!4v1704067200000!5m2!1sen!2sse"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15544.889631851!2d101.6583!3d12.6833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102e0c7c1d3f4e9%3A0x8c8c8c8c8c8c8c8c!2sCape%20Mae%20Phim!5e0!3m2!1sen!2sth!4v1704067200000!5m2!1sen!2sth"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Villa Siam location"
+              title="Villa Siam location - Cape Mae Phim"
             />
           </motion.div>
         </div>

@@ -17,7 +17,7 @@ import {
 
 const amenities = [
   { icon: Waves, name: "Private infinity pool", description: "10x5 meters" },
-  { icon: Wifi, name: "Fast WiFi", description: "100 Mbit/s" },
+  { icon: Wifi, name: "Fiber Internet", description: "High-speed fiber" },
   { icon: Wind, name: "Air conditioning", description: "In all rooms" },
   { icon: Car, name: "Free parking", description: "2 cars" },
   { icon: Utensils, name: "Fully equipped kitchen", description: "Modern appliances" },

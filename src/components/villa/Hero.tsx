@@ -7,7 +7,7 @@ const quickFacts = [
   { icon: Users, label: "8 guests", value: "max" },
   { icon: Bed, label: "4 bedrooms", value: "" },
   { icon: Waves, label: "Private pool", value: "" },
-  { icon: Wifi, label: "Fast WiFi", value: "" },
+  { icon: Wifi, label: "Fiber Internet", value: "" },
 ];
 
 export function Hero() {
@@ -42,7 +42,7 @@ export function Hero() {
           >
             <MapPin className="w-4 h-4" />
             <span className="text-sm font-medium tracking-wide uppercase">
-              Koh Samui, Thailand
+              Cape Mae Phim, Rayong, Thailand
             </span>
           </motion.div>
 
