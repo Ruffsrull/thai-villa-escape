@@ -99,12 +99,6 @@ export function Hero() {
             >
               {t('nav.bookNow')}
             </a>
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center border-2 border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground/10 text-base font-medium px-8 py-4 rounded-full backdrop-blur-sm transition-colors"
-            >
-              {t('nav.sendInquiry')}
-            </a>
           </motion.div>
         </motion.div>
       </div>
