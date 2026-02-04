@@ -1,7 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { Send, Mail, Phone, MessageCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
@@ -195,21 +194,20 @@ export function Contact() {
                   />
                 </div>
 
-                <Button
+                <button
                   type="submit"
-                  size="lg"
-                  className="w-full bg-gradient-ocean text-primary-foreground hover:opacity-90 transition-opacity gap-2"
                   disabled={isSubmitting}
+                  className="w-full h-11 px-8 rounded-md font-medium text-sm bg-gradient-ocean text-primary-foreground hover:opacity-90 transition-opacity disabled:opacity-50 disabled:pointer-events-none inline-flex items-center justify-center gap-2"
                 >
                   {isSubmitting ? (
-                    "Sending..."
+                    t('contact.form.sending')
                   ) : (
                     <>
                       <Send className="w-4 h-4" />
                       {t('contact.form.submit')}
                     </>
                   )}
-                </Button>
+                </button>
               </div>
             </form>
           </motion.div>

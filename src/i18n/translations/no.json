@@ -170,6 +170,7 @@
       "message": "Melding",
       "messagePlaceholder": "Fortell oss om turen din...",
       "submit": "Send forespørsel",
+      "sending": "Sender...",
       "successTitle": "Forespørsel sendt!",
       "successDescription": "Vi svarer deg innen 24 timer.",
       "errorTitle": "Noe gikk galt",
