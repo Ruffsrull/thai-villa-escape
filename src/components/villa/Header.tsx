@@ -48,9 +48,12 @@ export function Header() {
                 <Phone className="w-4 h-4" />
                 <span className="hidden xl:inline">+66 123 456 789</span>
               </Button>
-              <Button className="bg-gradient-ocean text-primary-foreground hover:opacity-90 transition-opacity">
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center h-10 px-4 rounded-md font-medium text-sm bg-gradient-ocean text-primary-foreground hover:opacity-90 transition-opacity"
+              >
                 {t('nav.bookNow')}
-              </Button>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -86,9 +89,13 @@ export function Header() {
                 </a>
               ))}
               <div className="pt-4 border-t border-border mt-2">
-                <Button className="w-full bg-gradient-ocean text-primary-foreground">
+                <a
+                  href="#contact"
+                  onClick={() => setIsOpen(false)}
+                  className="block w-full text-center py-3 rounded-md font-medium text-sm bg-gradient-ocean text-primary-foreground"
+                >
                   {t('nav.bookNow')}
-                </Button>
+                </a>
               </div>
             </nav>
           </motion.div>

@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Users, Bed, Waves, Wifi, MapPin } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import poolSunset from "@/assets/pool-sunset.jpg";
 
@@ -94,19 +93,18 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.7 }}
             className="flex flex-wrap gap-4"
           >
-            <Button
-              size="lg"
-              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 text-base px-8 py-6 rounded-full shadow-strong"
+            <a
+              href="#contact"
+              className="inline-flex items-center justify-center bg-primary-foreground text-primary hover:bg-primary-foreground/90 text-base font-medium px-8 py-4 rounded-full shadow-strong transition-colors"
             >
               {t('nav.bookNow')}
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground/10 text-base px-8 py-6 rounded-full backdrop-blur-sm"
+            </a>
+            <a
+              href="#contact"
+              className="inline-flex items-center justify-center border-2 border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground/10 text-base font-medium px-8 py-4 rounded-full backdrop-blur-sm transition-colors"
             >
               {t('nav.sendInquiry')}
-            </Button>
+            </a>
           </motion.div>
         </motion.div>
       </div>
