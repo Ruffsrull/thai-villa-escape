@@ -170,6 +170,7 @@
       "message": "Message",
       "messagePlaceholder": "Parlez-nous de votre voyage...",
       "submit": "Envoyer la demande",
+      "sending": "Envoi en cours...",
       "successTitle": "Demande envoyée !",
       "successDescription": "Nous vous répondrons dans les 24 heures.",
       "errorTitle": "Quelque chose s'est mal passé",

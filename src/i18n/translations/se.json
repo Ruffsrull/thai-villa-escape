@@ -170,6 +170,7 @@
       "message": "Meddelande",
       "messagePlaceholder": "Berätta om din resa...",
       "submit": "Skicka förfrågan",
+      "sending": "Skickar...",
       "successTitle": "Förfrågan skickad!",
       "successDescription": "Vi återkommer inom 24 timmar.",
       "errorTitle": "Något gick fel",

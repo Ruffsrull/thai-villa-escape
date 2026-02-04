@@ -170,6 +170,7 @@
       "message": "Nachricht",
       "messagePlaceholder": "Erzählen Sie uns von Ihrer Reise...",
       "submit": "Anfrage senden",
+      "sending": "Wird gesendet...",
       "successTitle": "Anfrage gesendet!",
       "successDescription": "Wir melden uns innerhalb von 24 Stunden.",
       "errorTitle": "Etwas ist schief gelaufen",
