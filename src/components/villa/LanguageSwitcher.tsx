@@ -14,11 +14,11 @@ export function LanguageSwitcher() {
   const getCurrentLanguage = () => {
     const lang = i18n.language;
     // Normalize language codes
-    if (lang.startsWith('sv')) return 'se';
-    if (lang.startsWith('nb') || lang.startsWith('nn')) return 'no';
-    if (lang.startsWith('en')) return 'en';
-    if (lang.startsWith('de')) return 'de';
-    if (lang.startsWith('fr')) return 'fr';
+    if (lang === 'se' || lang.startsWith('sv')) return 'se';
+    if (lang === 'no' || lang.startsWith('nb') || lang.startsWith('nn')) return 'no';
+    if (lang === 'en' || lang.startsWith('en')) return 'en';
+    if (lang === 'de' || lang.startsWith('de')) return 'de';
+    if (lang === 'fr' || lang.startsWith('fr')) return 'fr';
     return 'en';
   };
 
