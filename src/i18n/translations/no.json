@@ -158,6 +158,8 @@
     "available": "Tilgjengelig 9:00-21:00 (Thailand-tid)",
     "emailUs": "Send e-post",
     "responseTime": "Vi svarer innen 24 timer",
+    "whatsapp": "WhatsApp",
+    "chatWithUs": "Chat med oss",
     "form": {
       "name": "Navn",
       "namePlaceholder": "Ditt navn",

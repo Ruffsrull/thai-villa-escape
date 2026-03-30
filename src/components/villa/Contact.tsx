@@ -98,7 +98,7 @@ export function Contact() {
                 </div>
                 <div>
                   <div className="text-sm text-primary-foreground/60">WhatsApp</div>
-                  <div className="font-medium">Chat with us</div>
+                  <div className="font-medium">{t('contact.chatWithUs')}</div>
                 </div>
               </a>
             </div>
